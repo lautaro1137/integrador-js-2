@@ -1,0 +1,357 @@
+@media screen and (max-width: 992px) {
+  .text-desktop {
+    display: none;
+  }
+  .text-mobile {
+    display: block;
+  }
+  /* navbar */
+  .navbar {
+    gap: 10px;
+  }
+
+  .cart-icon {
+    border: 0px solid;
+  }
+
+  .navbar-list {
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background: hsla(138, 82%, 69%, 1);
+    background: linear-gradient(
+      90deg,
+      hsla(138, 82%, 69%, 1) 0%,
+      rgb(132, 229, 240) 100%
+    );
+    border: 2px solid var(--electric);
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+  }
+
+  .navbar-list a {
+    font-size: 18px;
+  }
+
+  /* Mostramos el icono del menu */
+  .menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .menu-label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  .open-menu {
+    display: flex;
+  }
+  /* Logos */
+
+  .logos {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 4rem;
+  }
+  .logos img {
+    width: 25%;
+  }
+
+  /* About */
+
+  .about {
+    max-width: 100%;
+    height: 100%;
+    padding: 40px 20px;
+    display: flex;
+    align-items: unset;
+    justify-content: center;
+    background-image: url(./About/Cardiologist-bro.svg),
+      url(/assets/About/Medical\ research-bro.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 215px, 100px;
+    background-position: bottom right, top left;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .texto p {
+    font-size: 18px;
+    width: 70%;
+    color: #000000;
+    line-height: 1.7;
+    font-weight: bold;
+  }
+
+  .text-desktop {
+    display: none;
+  }
+  .text-mobile {
+    display: block;
+  }
+
+  /* Cards */
+  .categories {
+    flex-wrap: wrap;
+    max-width: 390px;
+  }
+
+  .category {
+    width: 120px;
+  }
+  .img-project {
+    width: 200px;
+    height: 280px;
+    margin: auto;
+  }
+
+  .project {
+    margin-right: 100px;
+  }
+  /* Galeria */
+  .animacion img {
+    width: 85vw;
+  }
+
+  .siguiente {
+    width: 40px;
+  }
+
+  /*Products*/
+  .project-container {
+    margin: 2% -9% 0% 0%;
+    padding: 50px;
+  }
+
+  /* formulario */
+  #formulario {
+    display: grid;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+  }
+
+  .contact-wrapper {
+    display: grid;
+  }
+
+  .contact-form {
+    margin-right: 8%;
+    margin-bottom: 2%;
+  }
+
+  .contact-info {
+    background-size: 180px;
+    background: var(--background);
+  }
+
+  .footer-logo img {
+    display: none;
+  }
+
+  .footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .footer-social ul {
+    display: flex;
+  }
+
+  .footer-social a {
+    color: var(--text-gray);
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 630px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 28px;
+    margin-top: 5px;
+  }
+  .title-desktop {
+    display: none;
+  }
+
+  .title-mobile {
+    display: block;
+  }
+
+  /* Modificar el carrito para celu*/
+  .cart {
+    left: 0;
+    width: 100%;
+    border: none;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+
+  /* Hero */
+
+  .container-hero button {
+    width: 60%;
+  }
+
+  .title-mobile h1 {
+    font-size: 5px;
+  }
+  /* Logos */
+
+  .logos {
+    margin: 0 8% 0 20%;
+  }
+  .logos img {
+    width: 18%;
+  }
+  /* About */
+
+  .about {
+    background-size: contain, 0;
+    background-image: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+  }
+  .about .texto p {
+    font-size: 22px;
+    width: 90%;
+    color: #413d3d;
+    line-height: 1.8;
+  }
+
+  /* Galeria */
+
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: auto;
+  }
+
+  .animacion {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    padding: auto;
+  }
+
+  .animacion img {
+    width: 90vw;
+    max-height: auto;
+  }
+
+  .animacion:target {
+    transform: scale(1);
+  }
+  .cerrar {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: var(--primary);
+    color: var(--text-white);
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .siguiente {
+    display: block;
+    background: var(--primary);
+    color: var(--text-white);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .products h2 {
+    margin-left: 500px;
+  }
+  .categories {
+    max-width: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin: auto;
+  }
+
+  .categories {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .category {
+    width: 150px;
+    border: none;
+  }
+
+  .project-container {
+    margin: auto;
+    overflow: unset;
+  }
+  .img-project {
+    max-width: 150px;
+    max-height: 100px;
+    margin: auto;
+  }
+  .descripcion {
+    display: none;
+  }
+  .donacion {
+    border: #000000;
+  }
+  .project {
+    max-width: 200px;
+    max-height: 400px;
+    height: 400px;
+
+    padding: 10px;
+    display: inline;
+  }
+
+  .project-info h3,
+  .project-info p,
+  .project-info span {
+    font-size: 14px;
+  }
+
+  .btn-add {
+    margin-left: 30%;
+  }
+
+  #error-message {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 450px) {
+  .container-hero h1 {
+    font-size: 30px;
+  }
+}

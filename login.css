@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #7bb5f1;
+  background-image: url(./assets/Reset\ password-bro.png),
+    linear-gradient(62deg, #e2fcff 0%, #62f1bf 100%);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: #ffffffab;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 20%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  -webkit-animation: scale-up-br 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-br 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-br {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+}
+@keyframes scale-up-br {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+}
+
+.volver {
+  display: block;
+  background: #ffffff;
+  color: black;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.container form .title {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+
+.container form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container form .input-box {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.container form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+
+.container form .underlin::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+.container form .underlin::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(62deg, #43b68e 0%, #82d9e2 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 1s ease;
+}
+
+.container form .input-box input:focus ~ .underlin:after,
+.container form .input-box input:valid ~ .underlin:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.container form .bto-ingresar input {
+  width: 70%;
+  height: 45px;
+  font-size: 17px;
+  margin-top: 25px;
+  margin-left: 10%;
+  color: #000;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  transition: all 0.9s ease;
+  cursor: pointer;
+}
+.container form .bto-ingresar input:hover {
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #9b59b6, #71b7e6);
+}
+
+.registrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  gap: 20px;
+}
+.container .option {
+  font-size: 14px;
+  text-align: center;
+}
+
+.option h2 {
+  margin-top: 15px;
+  margin-right: 5%;
+  color: #e2fcff;
+}
+.container .twitter a,
+.container .facebook a,
+.container .gmail a {
+  display: block;
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-top: 10px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .twitter i,
+.container .facebook i,
+.container .gmail i {
+  margin-right: 10px;
+}
+.container .twitter a {
+  background: #00acee;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+
+.container .facebook a {
+  margin-top: 20px;
+  margin-left: 20%;
+  background: #3b5998;
+}
+
+.container .gmail a {
+  margin-top: 20px;
+  margin-left: 20%;
+  background: #db4a39;
+}
+
+.container .title-registro {
+  top: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin: 10%;
+    height: 100%;
+    padding: 15px;
+  }
+
+  .container form .title {
+    font-size: 25px;
+  }
+
+  .input-box {
+    margin-top: 15px;
+  }
+  .container form .bto-ingresar input {
+    margin-top: 8px;
+    height: 30px;
+  }
+  .bto-ingresar input {
+    font-size: 14px;
+  }
+
+  .option {
+    font-size: 12px;
+  }
+
+  .container .twitter a,
+  .container .facebook a,
+  .container .gmail a {
+    display: block;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-top: 10px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 584px) {
+  .container {
+    margin: 5%;
+    padding: 10px;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .input-box {
+    margin-top: 10px;
+  }
+
+  .bto-ingresar input {
+    font-size: 12px;
+  }
+
+  .container .twitter a,
+  .container .facebook a,
+  .container .gmail a {
+    display: block;
+    width: 70%;
+    height: 50px;
+    margin-top: 5px;
+
+    .option {
+      font-size: 10px;
+    }
+  }
+}
