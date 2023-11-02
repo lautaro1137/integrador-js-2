@@ -410,6 +410,14 @@
     padding: 0;
   }
 
+  .project {
+    max-width: 70vw;
+    max-height: 70vh;
+    margin-right: 0;
+    padding: 10px;
+    display: inline;
+  }
+
   #error-message {
     margin: 0;
   }
