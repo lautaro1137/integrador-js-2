@@ -127,10 +127,17 @@
     width: 40px;
   }
 
-  /*Products*/
   .project-container {
     margin: 2% -9% 0% 0%;
     padding: 50px;
+  }
+
+  .project-bot {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-add {
+    justify-content: center;
   }
 
   /* formulario */
@@ -336,7 +343,7 @@
   }
   .project {
     max-width: 70vw;
-    max-height: 55vh;
+    max-height: 60vh;
     margin-right: 0;
     padding: 10px;
     display: inline;
@@ -375,7 +382,7 @@
   .container-hero h1 {
     font-size: 30px;
   }
-  .pro #products h2 {
+  #products h2 {
     font-size: 1.2rem;
     justify-content: center;
   }
