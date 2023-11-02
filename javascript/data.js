@@ -45,7 +45,7 @@ const productsData = [
   },
   {
     id: 5,
-    name: "Proyecto de Recolección de Medicamentos",
+    name: "Recolección de Medicamentos",
     descripcion:
       "Organizar campañas de recolección de medicamentos no utilizados y donarlos a personas sin acceso a atención médica.",
     cardImg: "/javascript/proyectos/proyect-5.jpg",
