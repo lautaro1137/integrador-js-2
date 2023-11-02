@@ -686,6 +686,7 @@ ul {
 #products h2 {
   font-weight: 800;
   margin-bottom: 40px;
+  justify-content: center;
 }
 
 /* categories */
@@ -714,7 +715,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   width: 90%;
-
   grid-gap: 10px;
   padding: 50px;
   overflow: hidden;

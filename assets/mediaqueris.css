@@ -290,9 +290,12 @@
     text-decoration: none;
     text-align: center;
   }
+  #products {
+    margin: 0;
+  }
 
-  .products h2 {
-    margin-left: 500px;
+  #products h2 {
+    font-size: 1.8rem;
   }
   .categories {
     max-width: 200px;
@@ -300,20 +303,25 @@
     align-items: center;
     gap: 2px;
     margin: auto;
-  }
-
-  .categories {
+    padding: 0 0px 0 55px;
     gap: 10px;
     margin-bottom: 15px;
   }
+
   .category {
     width: 150px;
     border: none;
   }
 
   .project-container {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    width: 100vw;
+    grid-gap: 10px;
     margin: auto;
-    overflow: unset;
+    padding: 50px;
   }
   .img-project {
     max-width: 150px;
@@ -327,10 +335,9 @@
     border: #000000;
   }
   .project {
-    max-width: 200px;
-    max-height: 400px;
-    height: 400px;
-
+    max-width: 70vw;
+    max-height: 55vh;
+    margin-right: 0;
     padding: 10px;
     display: inline;
   }
@@ -339,19 +346,75 @@
   .project-info p,
   .project-info span {
     font-size: 14px;
+    justify-content: center;
+    align-items: center;
   }
-
+  .project-bot {
+    display: flex;
+    justify-content: center;
+  }
   .btn-add {
-    margin-left: 30%;
+    justify-content: center;
   }
 
+  .btn-load {
+    margin-left: 25%;
+  }
   #error-message {
     font-size: 0.9em;
+  }
+  .footer-container {
+    justify-content: center;
+  }
+  .footer-links a {
+    display: none;
   }
 }
 
 @media (max-width: 450px) {
   .container-hero h1 {
     font-size: 30px;
+  }
+  .pro #products h2 {
+    font-size: 1.2rem;
+    justify-content: center;
+  }
+  .project-container {
+    margin: 2% -25% 0% 0%;
+  }
+  .project {
+    max-width: 65vw;
+    max-height: 65vh;
+    padding: 10px;
+    display: inline;
+  }
+}
+
+@media (max-width: 389px) {
+  .about .texto p {
+    font-size: 1.2rem;
+    width: 100%;
+    color: #000000;
+    margin-top: 10%;
+    line-height: 1.6;
+  }
+  .logos {
+    margin: 0 5% 0 5%;
+    padding: 0;
+  }
+
+  #error-message {
+    margin: 0;
+  }
+  .cart {
+    width: 90%;
+    min-width: 300px;
+    right: 20px;
+  }
+  .footer-links li {
+    font-size: 12px;
+    font-weight: 1000;
+    margin-bottom: 10%;
+    border-bottom: 1px solid #000000;
   }
 }

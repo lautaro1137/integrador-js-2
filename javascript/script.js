@@ -28,7 +28,7 @@ form.addEventListener("submit", function (event) {
 
   // Validacion del campo Nombre y Apellido
   if (nombreInput.value.trim() === "") {
-    errorMessage.textContent = "Por favor, ingrese su nombre y apellido.";
+    errorMessage.textContent = "Por favor, ingrese su Nombre.";
     event.preventDefault();
     return;
   }
@@ -49,8 +49,7 @@ form.addEventListener("submit", function (event) {
   //Validacion de campo telefono
   const telefonoValue = telefonoInput.value;
   if (!isValidPhoneNumber(telefonoValue)) {
-    errorMessage.textContent =
-      "Por favor, ingrese un número de teléfono válido.";
+    errorMessage.textContent = "Por favor, ingrese un teléfono válido.";
     event.preventDefault();
     return;
   }
