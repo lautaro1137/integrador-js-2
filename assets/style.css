@@ -666,7 +666,7 @@ ul {
 
 #error-message {
   font-size: 1.1em;
-  margin: 5% 0 2% 20%;
+
   text-align: center;
   background-color: var(--secondary);
 }
